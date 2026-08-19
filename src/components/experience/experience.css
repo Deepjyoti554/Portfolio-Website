@@ -2,8 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin-left: 10rem;
-    margin-top: 2rem;
 }
 .experience__container > div h3 {
     text-align: center;
@@ -19,11 +17,21 @@
 }
 .experience__container > div:hover{
     background: var(--color-primary-variant);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 .experience__content{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.6rem;
+    transition: var(--transition);
+}
+
+.experience__content:hover{
+    background: var(--color-bg);
+    transform: translateX(5px);
 }
 
 .experience__content-icon{

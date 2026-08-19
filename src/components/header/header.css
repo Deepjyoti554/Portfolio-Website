@@ -8,9 +8,6 @@ header{
     text-align: center;
     height: 100%;
     position: relative;
-    /* ============== */
-    margin-left: 10rem;
-    margin-top: 1rem;
 }
 
 /* =========== CTA ========== */
@@ -39,19 +36,32 @@ header{
     background: var(--color-primary);
 }
 
+.header__socials a{
+    transition: var(--transition);
+}
+
+.header__socials a:hover{
+    color: var(--color-white);
+    transform: scale(1.25);
+}
+
 .me{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* width: 50%; */
     background: linear-gradient(var(--color-primary)), transparent;
     height: 30rem;
     width: 22rem;
-    /* left: calc(50% -11rem); */
+    max-width: 100%;
     margin-top: 2rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 3rem 1.5rem 1.5rem 1.5rem;
+    transition: var(--transition);
+}
+
+.me:hover{
+    transform: scale(1.03);
 }
 
 .scroll__down{
@@ -72,5 +82,10 @@ header{
 @media screen and (max-width: 600px) {
     .header__socials, .scroll__down{
         display: none;
+    }
+
+    .me{
+        width: 15rem;
+        height: 20rem;
     }
 }
